@@ -1,0 +1,84 @@
+html {
+	font-family: "Roboto";
+	width: 1280px;
+	margin: 0 auto;
+}
+
+page {
+	background-color: rgba(250, 245, 229, 1);
+}
+
+.header__logo {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 11px;
+}
+
+.navigation {
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 11px;
+	font-style: normal;
+}
+
+.first-main-page {
+	position: relative;
+	display: flex;
+}
+
+.left-column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 640px;
+	align-items: center;
+	justify-content: center;
+}
+
+.right-column {
+	display: flex;
+	flex-basis: 640px;
+}
+
+.first-main-page__main-photo {
+	background-image: url("../content/main_photo.jpg");
+	background-size: 722px 962px;
+	background-repeat: no-repeat;
+	width: 722px;
+	height: 962px;
+	position: absolute;
+	right: -100px;
+	top: 0;
+}
+
+.left-column__title-of-main-page {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 51px;
+	line-height: 59px;
+	text-align: center;
+}
+
+.left-column__ps {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 13px;
+	text-align: center;
+	letter-spacing: 2.08px;
+	text-transform: uppercase;
+}
+
+.left-column__mini-logo {
+	width: 190px;
+	height: 190px;
+}
+
+.left-column__description {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	text-align: center;
+	letter-spacing: 0.32px;
+}

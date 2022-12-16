@@ -2,9 +2,10 @@ html {
 	font-family: "Roboto";
 	width: 1280px;
 	margin: 0 auto;
+	background-color: rgba(250, 245, 229, 1);
 }
 
-page {
+.page {
 	background-color: rgba(250, 245, 229, 1);
 }
 
@@ -21,9 +22,22 @@ page {
 	font-style: normal;
 }
 
-.first-main-page {
+.columns {
 	position: relative;
 	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+.columns__main-photo {
+	background-size: 722px 962px;
+	width: 722px;
+	height: 962px;
+	position: absolute;
+	top: 0;
+	left: 600px;
+	background-image: url("../content/main_photo.jpg");
+	background-repeat: no-repeat;
 }
 
 .left-column {
@@ -31,35 +45,27 @@ page {
 	flex-direction: column;
 	flex-basis: 640px;
 	align-items: center;
-	justify-content: center;
 }
 
-.right-column {
-	display: flex;
-	flex-basis: 640px;
-}
-
-.first-main-page__main-photo {
-	background-image: url("../content/main_photo.jpg");
-	background-size: 722px 962px;
-	background-repeat: no-repeat;
-	width: 722px;
-	height: 962px;
-	position: absolute;
-	right: -100px;
-	top: 0;
-}
-
-.left-column__title-of-main-page {
+.columns__title {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 51px;
-	line-height: 59px;
+	line-height: 115%;
 	text-align: center;
 }
 
-.left-column__ps {
-	font-family: "Roboto";
+.columns__title_top-position {
+	margin-top: 200px;
+	margin-bottom: 27px;
+}
+
+.columns__title_next-position {
+	margin-top: 140px;
+	margin-bottom: 40px;
+}
+
+.columns__ps {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 13px;
@@ -67,18 +73,70 @@ page {
 	text-align: center;
 	letter-spacing: 2.08px;
 	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
 }
 
-.left-column__mini-logo {
-	width: 190px;
-	height: 190px;
-}
-
-.left-column__description {
+.columns__description {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 140%;
 	text-align: center;
 	letter-spacing: 0.32px;
+	width: 374px;
+	padding: 0;
+	margin: 0;
+}
+
+.columns__mini-logo {
+	width: 190px;
+	height: 190px;
+	padding: 0;
+	margin-top: 85px;
+	margin-bottom: 105px;
+}
+
+.columns__br {
+	color: black;
+	width: 440px;
+	size: 2px;
+	padding: 0;
+	margin: 0;
+}
+
+.columns__people-img {
+	width: 283px;
+	height: 140px;
+	margin-top: 80px;
+	margin-bottom: 105px;
+}
+
+.columns__rule {
+	width: 339px;
+	height: 136px;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 130%;
+	letter-spacing: 0.78px;
+	margin: 0 auto 80px auto;
+	padding: 0;
+}
+
+.columns__man {
+	width: 282px;
+	height: 376px;
+	margin-top: 20px;
+	margin-bottom: 65px;
+}
+
+.columns__booking {
+	text-decoration: underline;
+	color: black;
+}
+
+.menu-description {
+	display: flex;
 }
